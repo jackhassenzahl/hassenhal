@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'PhantomSans';
+    src: url('/fonts/PhantomSans.woff2') format('woff2'),
+            url('/fonts/PhantomSans.woff') format('woff'),
+            url('/fonts/PhantomSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'assassin';
+    src: url('/fonts/BloodyScaryRegular.woff2') format('woff2'),
+            url('/fonts/BloodyScaryRegular.woff') format('woff'),
+            url('/fonts/BloodyScaryRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    line-height: 1;
+    background: #222;
+    font-family: 'PhantomSans';
+    color: #ccc;
+    margin: 0 0 3em;
+    text-align: center;
+}
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaderboard</title>
+    <link rel="icon" type="image/x-icon" href="https://images.emojiterra.com/google/android-12l/512px/1f52b.png">
+    <style>
+        @font-face {
+            font-family: 'PhantomSans';
+            src: url('/fonts/PhantomSans.woff2') format('woff2'),
+                 url('/fonts/PhantomSans.woff') format('woff'),
+                 url('/fonts/PhantomSans.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'assassin';
+            src: url('/fonts/BloodyScaryRegular.woff2') format('woff2'),
+                 url('/fonts/BloodyScaryRegular.woff') format('woff'),
+                 url('/fonts/BloodyScaryRegular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            line-height: 1;
+            background: #222;
+            font-family: 'PhantomSans';
+            color: #ccc;
+            margin: 0 0 3em;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 72px;
+            font-weight: normal;
+            color: #c44;
+            font-family: 'assassin';
+        }
+
+        ul {
+            list-style: none;
+            padding: 0 ;
+            margin: -2em auto;
+            width: max-content;
+        }
+        
+        li {
+            display: flex;               /* align name and kills side by side */
+            justify-content: space-between; /* push name left, kills right */
+            gap: 2em;
+            background: #444;
+            margin: 0.5em 0;
+            padding: 0.5em 1em;
+            font-size: 36px;
+            font-weight: bold;
+            border-radius: 36px;
+            color: #ccc;
+            white-space: nowrap;
+        }
+        
+        li.in {
+            color: #7c7;
+        }
+
+        li.out {
+            color: #c44;
+            font-family: 'assassin';
+            font-weight: normal;
+        }
+        
+        span.kills {
+            color: #cc7;
+            font-weight: bold;
+            font-family: 'PhantomSans';
+        }    
+    </style>
+</head>
+<body>
+    <h1>Leaderboard</h1>
+    <ul id="board">
+
+    </ul>
+    <script type="module">
+        import { renderTable } from '../data/data.js';
+
+        window.onload = () => renderTable('board', { showKills: true });
+    </script>
+</body>
+</html>
