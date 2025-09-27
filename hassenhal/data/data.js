@@ -1,10 +1,10 @@
 export const assassins = [
     { name: "Anna",         kills: 0,   status: "in" },
-    { name: "Anna Laura",   kills: 0,   status: "in" },
+    { name: "Anna Laura",   kills: 1,   status: "in" },
     { name: "Brielle",      kills: 0,   status: "in" },
     { name: "Ellie",        kills: 0,   status: "in" },
     { name: "Evelyn",       kills: 0,   status: "in" },
-    { name: "Jack",         kills: 0,   status: "in" },
+    { name: "Jack. H",      kills: 0,   status: "out" },
     { name: "Jackson",      kills: 0,   status: "in" },
     { name: "Jacob",        kills: 0,   status: "in" },
     { name: "Kai",          kills: 0,   status: "out" },
