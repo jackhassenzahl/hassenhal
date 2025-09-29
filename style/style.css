@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'PhantomSans';
+    font-family: 'phantomsans';
     src: url('../fonts/PhantomSans.woff2') format('woff2'),
             url('../fonts/PhantomSans.woff') format('woff'),
             url('../fonts/PhantomSans.ttf') format('truetype');
@@ -19,7 +19,7 @@
 body {
     line-height: 1;
     background: #222;
-    font-family: 'PhantomSans';
+    font-family: 'phantomsans';
     color: #ccc;
     margin: 0 0 3em;
     text-align: center;
@@ -31,31 +31,38 @@ h1 {
     color: #cc7;
 }
 
+p {
+    margin: auto;
+    font-size: 18px;
+    width: 80%;
+    max-width: 600px;
+}
+
 ul {
     list-style: none;
     padding: 0 ;
     margin: -2em auto;
 }
 
-/* Shared style for li and li a.button */
-li,
-a.button {
+li {
     width: max-content;
-    background: #444;
-    margin: 0.5em auto;
+    margin: 0 auto;
+}
+
+a {
+    display: block;
+    margin: 0.5em 0;
     padding: 0.5em 1em;
     font-size: 36px;
     font-weight: bold;
     border-radius: 36px;
+    background: #444;
+    text-decoration: none;
     color: #ccc;
-    text-decoration: none;       /* remove underline for a */
-    white-space: nowrap;
-    transition: all 0.3s ease;  /* smooth hover effect */
+    transition: all 0.3 ease;
 }
 
-/* Specific hover effect for the a.button inside li */
-li a.button:hover,
-li a.button:focus {
+a.button:hover, a.button:focus {
     color: #fff;
     background: #555;
     cursor: pointer;

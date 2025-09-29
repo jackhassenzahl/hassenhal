@@ -3,34 +3,8 @@
 <head>
     <title>Leaderboard</title>
     <link rel="icon" type="image/x-icon" href="https://images.emojiterra.com/google/android-12l/512px/1f52b.png">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
     <style>
-        @font-face {
-            font-family: 'PhantomSans';
-            src: url('/fonts/PhantomSans.woff2') format('woff2'),
-                 url('/fonts/PhantomSans.woff') format('woff'),
-                 url('/fonts/PhantomSans.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: 'assassin';
-            src: url('/fonts/BloodyScaryRegular.woff2') format('woff2'),
-                 url('/fonts/BloodyScaryRegular.woff') format('woff'),
-                 url('/fonts/BloodyScaryRegular.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        body {
-            line-height: 1;
-            background: #222;
-            font-family: 'PhantomSans';
-            color: #ccc;
-            margin: 0 0 3em;
-            text-align: center;
-        }
-
         h1 {
             font-size: 72px;
             font-weight: normal;
@@ -39,18 +13,15 @@
         }
 
         ul {
-            list-style: none;
-            padding: 0 ;
-            margin: -2em auto;
             width: max-content;
         }
         
         li {
-            display: flex;               /* align name and kills side by side */
-            justify-content: space-between; /* push name left, kills right */
+            display: flex;
+            justify-content: space-between;
             gap: 2em;
             background: #444;
-            margin: 0.5em 0;
+            margin: 0.5em auto;
             padding: 0.5em 1em;
             font-size: 36px;
             font-weight: bold;
