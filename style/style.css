@@ -1,17 +1,17 @@
 @font-face {
     font-family: 'phantomsans';
-    src: url('../fonts/PhantomSans.woff2') format('woff2'),
-            url('../fonts/PhantomSans.woff') format('woff'),
-            url('../fonts/PhantomSans.ttf') format('truetype');
+    src: url('/fonts/PhantomSans.woff2') format('woff2'),
+            url('/fonts/PhantomSans.woff') format('woff'),
+            url('/fonts/PhantomSans.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'assassin';
-    src: url('../fonts/BloodyScaryRegular.woff2') format('woff2'),
-            url('../fonts/BloodyScaryRegular.woff') format('woff'),
-            url('../fonts/BloodyScaryRegular.ttf') format('truetype');
+    src: url('/fonts/BloodyScaryRegular.woff2') format('woff2'),
+            url('/fonts/BloodyScaryRegular.woff') format('woff'),
+            url('/fonts/BloodyScaryRegular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
