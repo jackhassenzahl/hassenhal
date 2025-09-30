@@ -16,12 +16,16 @@
     font-style: normal;
 }
 
+html {
+    background: linear-gradient(18deg, #333 0px, #333 20px, #222 20px, #222 100%);
+}
+
 body {
     line-height: 1;
     background: #222;
     font-family: 'phantomsans';
     color: #ccc;
-    margin: 0 0 3em;
+    margin: 0;
     text-align: center;
 }
 
