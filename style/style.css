@@ -32,10 +32,7 @@ h1 {
 }
 
 p {
-    margin: auto;
     font-size: 18px;
-    width: 80%;
-    max-width: 600px;
 }
 
 ul {
