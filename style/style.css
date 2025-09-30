@@ -17,7 +17,9 @@
 }
 
 html {
-    background: linear-gradient(18deg, #333 0px, #333 20px, #222 20px, #222 100%);
+    background: linear-gradient(180deg, #333 0px, #333 20px, #222 20px, #222 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
 }
 
 body {
