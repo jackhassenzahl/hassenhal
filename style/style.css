@@ -41,7 +41,7 @@ p {
 ul {
     list-style: none;
     padding: 0;
-    margin: -2em auto;
+    margin: 0 auto;
 }
 
 li {
@@ -49,21 +49,88 @@ li {
     margin: 0 auto;
 }
 
-a {
+#menu li a {
     display: block;
     margin: 0.5em 0;
     padding: 0.5em 1em;
     font-size: 36px;
     font-weight: bold;
     border-radius: 36px;
-    background: #444;
+    background: #333;
     text-decoration: none;
     color: #ccc;
-    transition: all 0.3 ease;
+    transition: 0.3s;
 }
 
-a.button:hover, a.button:focus {
+#menu li a.button:hover, #menu li a.button:focus {
     color: #fff;
     background: #555;
     cursor: pointer;
+}
+
+#navbar {
+    display: flex;
+    background-color: #333;
+    padding: 1em 1em;
+    align-items: center;
+}
+
+
+#navbar #navbutton a {
+    color: #ccc;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#navbar #navbutton a:hover {
+    color: #fff;
+    background-color: #555;
+    border-radius: 18px;
+}
+
+#navbar #logo {
+    color: #cc7;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+/* ----------------------------- */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-content {
+    margin-top: 0.5em;
+    width: max-content;
+    display: none;
+    position: absolute;
+    background-color: #444;
+    border-radius: 18px;
+    flex-direction: column;
+    right: 0;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.dropdown > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.dropdown > a:hover {
+    background-color: #555;
+    border-radius: 5px;
 }
