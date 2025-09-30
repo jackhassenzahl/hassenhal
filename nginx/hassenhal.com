@@ -6,7 +6,10 @@ server {
 	index index.html;
 
 	location / {
-		add_header Cache-Control "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0";
 		try_files $uri $uri/ =404;
 	}
+	location ~* \.js$ {
+		add_header Cache-Control "no-store, must-revalidate;
+	}
+
 }
