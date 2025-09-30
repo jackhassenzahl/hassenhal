@@ -49,12 +49,16 @@
     </style>
 </head>
 <body>
-    <h1>Leaderboard</h1>
-    <ul id="board">
+    <div id="navigation"></div>
 
+    <h1>Leaderboard</h1>
+
+    <ul id="board">
     </ul>
+
+    <script src="/scripts/navbar.js"></script>
     <script type="module">
-        import { renderTable } from '../data/data.js';
+        import { renderTable } from '/assassin/data/data.js';
 
         window.onload = () => renderTable('board', { showKills: true });
     </script>
