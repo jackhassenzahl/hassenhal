@@ -1,4 +1,4 @@
-fetch('/navbar.html')
+fetch('/templates/navbar.html')
   .then(response => response.text())
   .then(data => {
     document.getElementById('navigation').innerHTML = data;
