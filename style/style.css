@@ -116,7 +116,7 @@ li {
     white-space: nowrap;
     display: flex;
     flex-direction: column;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: 0.3s;
 }
 
 .dropdown-content a {
