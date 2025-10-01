@@ -94,7 +94,7 @@ li {
     padding: 0.4em 1em;
     text-decoration: none;
     border-radius: 24px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 #navbar #navbutton a:hover,
@@ -105,8 +105,8 @@ li {
 
 #navbar #logo:hover,
 #navbar #logo:focus {
-    color: #cca;
-    text-decoration: underline;
+    color: #ccc;
+    transition: 0.5s;
 }
 
 #navbar #logo {
@@ -116,6 +116,7 @@ li {
     font-weight: bold;
     margin-right: auto;
     flex: 0 0 auto;
+    transition: 0.5s;
 }
 
 .dropdown {
