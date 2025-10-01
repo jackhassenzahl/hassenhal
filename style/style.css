@@ -88,7 +88,8 @@ li {
     transition: 0.3s;
 }
 
-#navbar #navbutton a:hover {
+#navbar #navbutton a:hover,
+#navbar #navbutton a:focus {
     color: #fff;
     background-color: #555;
 }
@@ -130,11 +131,13 @@ li {
     color: #ccc;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover,
+.dropdown-content a:focus {
     background-color: #555;
     color: #fff;
 }
 
+.dropdown:focus .dropdown-content,
 .dropdown:hover .dropdown-content {
     opacity: 1;
     transform: translateX(-50%) translateY(0);
