@@ -1,8 +1,8 @@
 server {
     listen 80;
-    server_name example.hassenhal.com;
+    server_name dev.hassenhal.com;
 
-    root /var/www/html/hassenhal;
+    root /var/www/html/hassenhal/dev;
 	index index.html;
 
 	location / {
