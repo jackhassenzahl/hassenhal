@@ -1,5 +1,25 @@
 @media (max-width: 700px) {
-    h1 {
-        font-size: 72px;
+    #navbutton {
+        font-size: 18px;
+        border-radius: 18px;
     }
+
+    #navbar #logo {
+        font-size: 36px;
+    }
+
+    .dropdown-content {
+        border-radius: 18px;
+        margin-top: 6px;
+    }
+
+    #board li {
+        font-size: 24px;
+        border-radius: 24px;
+    }
+
+    #menu li a {
+        font-size: 24px;
+        border-radius: 24px;
+    }    
 }

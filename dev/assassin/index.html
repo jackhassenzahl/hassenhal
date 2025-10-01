@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leaderboard</title>
+    <link rel="icon" href="/images/h.png" sizes="512x512" type="image/png">
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
+    <link rel="stylesheet" type="text/css" media="(max-width: 700px)" href="/style/small.css">
+    <link rel="stylesheet" type="text/css" media="(min-width: 701px) and (max-width: 900px)" href="/style/medium.css">
+    <link rel="stylesheet" type="text/css" media="(min-width: 901px)" href="/style/large.css">
+    <style>
+        h1 {
+            font-size: 72px;
+            font-weight: normal;
+            color: #c44;
+            font-family: 'assassin';
+        }
+
+        ul {
+            width: max-content;
+        }
+        
+        li {
+            width: auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 2em;
+            background: #333;
+            margin: 0.5em auto;
+            padding: 0.5em 1em;
+            font-size: 36px;
+            font-weight: bold;
+            border-radius: 36px;
+            color: #ccc;
+            white-space: nowrap;
+        }
+        
+        li.in {
+            color: #7c7;
+        }
+
+        li.out {
+            color: #c44;
+            font-family: 'assassin';
+            font-weight: normal;
+        }
+        
+        span.kills {
+            color: #cc7;
+            font-weight: bold;
+            font-family: 'phantomsans';
+        }    
+    </style>
+</head>
+<body>
+    <div id="navigation"></div>
+
+    <h1>Leaderboard</h1>
+
+    <ul id="board">
+    </ul>
+
+    <script src="/scripts/navbar.js"></script>
+    <script type="module">
+        import { renderTable } from '/assassin/data/data.js';
+
+        window.onload = () => renderTable('board', { showKills: true });
+    </script>
+</body>
+</html>

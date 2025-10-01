@@ -1,5 +1,10 @@
 @media (min-width: 901px) {
-    h1 {
-        font-size: 72px;
+    .dropdown-content {
+        transform: translateY(-10px);
+    }
+
+    .dropdown:focus .dropdown-content,
+    .dropdown:hover .dropdown-content {
+        transform: translateY(0);
     }
 }
