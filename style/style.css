@@ -46,6 +46,10 @@ li {
     margin: 0 auto;
 }
 
+#menu {
+    margin-top: -1em;
+}
+
 #menu li a {
     display: block;
     margin: 0.5em 0;
