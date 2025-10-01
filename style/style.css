@@ -103,6 +103,12 @@ li {
     background-color: #555;
 }
 
+#navbar #logo:hover,
+#navbar #logo:focus {
+    color: #cca;
+    text-decoration: underline;
+}
+
 #navbar #logo {
     color: #cc7;
     text-decoration: none;
@@ -125,7 +131,7 @@ li {
     border-radius: 24px;
     position: absolute;
     right: 0;
-    transform:translateX(100%);
+    transform: translateX(100%);
     opacity: 0;
     pointer-events: none;
     white-space: nowrap;
@@ -147,9 +153,13 @@ li {
     color: #fff;
 }
 
-.dropdown:focus .dropdown-content,
+.dropdown:focus-within .dropdown-content,
 .dropdown:hover .dropdown-content {
     opacity: 1;
     transform: translateX(0);
     pointer-events: auto;
+}
+
+:focus {
+    outline: none;
 }
