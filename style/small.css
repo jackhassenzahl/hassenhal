@@ -1,4 +1,41 @@
 @media (max-width: 700px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    #navbar {
+    display: flex;
+    background-color: #333;
+    padding: 1em;
+    align-items: center;
+}
+
+    #navbutton {
+        padding: 15px 0;
+        border-radius: 27px;
+        font-size: 18px;
+    }
+
+    #navbar #navbutton a {
+        padding: 15px 1em;
+        border-radius: 27px;
+    }
+
+    #navbar #logo {
+        font-size: 24px;
+        padding: 12px 0.5em;
+        border-radius: 24px;
+    }
+
+    .dropdown-content {
+        margin-top: 13px;
+        border-radius: 27px;
+    }
+
+    .dropdown-content a {
+        padding: 15px 1em;
+    }
+
     #board li {
         font-size: 24px;
         border-radius: 24px;
