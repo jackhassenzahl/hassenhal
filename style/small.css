@@ -4,12 +4,16 @@
         font-size: 18px;
     }
 
+    #navbar #navbutton a {
+        padding: 18px 1em;
+    }
+
     #navbar #logo {
         font-size: 36px;
     }
 
     .dropdown-content {
-        margin-top: 16px;
+        margin-top: 15px;
     }
 
     #board li {
