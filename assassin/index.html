@@ -55,16 +55,15 @@
 </head>
 <body>
     <div id="navigation"></div>
-
     <h1>Leaderboard</h1>
-
     <ul id="board">
     </ul>
-
+    <footer>
+        <p>Copyright 2025 Jack Hassenzahl</p>
+    </footer>
     <script src="/scripts/navbar.js"></script>
     <script type="module">
         import { renderTable } from '/assassin/data/data.js';
-
         window.onload = () => renderTable('board', { showKills: true });
     </script>
 </body>
