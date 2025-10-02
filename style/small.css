@@ -1,21 +1,4 @@
 @media (max-width: 700px) {
-    #navbutton {
-        padding: 18px 0;
-        font-size: 18px;
-    }
-
-    #navbar #navbutton a {
-        padding: 18px 1em;
-    }
-
-    #navbar #logo {
-        font-size: 36px;
-    }
-
-    .dropdown-content {
-        margin-top: 15px;
-    }
-
     #board li {
         font-size: 24px;
         border-radius: 24px;
