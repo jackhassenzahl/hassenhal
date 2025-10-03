@@ -102,6 +102,7 @@ li {
 #navbar #logo:focus {
     background-color: #555;
     color: #fff;
+    text-decoration: underline;
 }
 
 #navbar #logo {

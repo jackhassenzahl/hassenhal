@@ -19,4 +19,9 @@
     #navbar #logo {
         transition: 0.5s;
     }
+
+    #navbar #logo:hover,
+    #navbar #logo:focus {
+        text-decoration: none;
+    }
 }
