@@ -11,4 +11,12 @@
     .dropdown:hover .dropdown-content {
         transform: translateY(0);
     }
+
+    #navbar #navbutton a {
+        transition: 0.5s;
+    }
+
+    #navbar #logo {
+        transition: 0.5s;
+    }
 }
