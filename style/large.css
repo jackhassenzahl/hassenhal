@@ -7,7 +7,17 @@
     #navbar #logo:focus {
         text-decoration: none;
     }
-    
+
+    #menu li a.button:hover,
+    #menu li a.button:focus {
+        text-decoration: none;
+    }
+
+    #navbar #navbutton a:hover,
+    #navbar #navbutton a:focus {
+        text-decoration: none;
+    }
+
     #navbar #navbutton a {
         transition: 0.5s;
     }

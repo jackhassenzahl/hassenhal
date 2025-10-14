@@ -80,6 +80,7 @@ img {
     color: #fff;
     background: #555;
     cursor: pointer;
+    text-decoration: underline;
 }    
 
 #navbar {
@@ -113,6 +114,7 @@ img {
 #navbar #navbutton a:focus {
     color: #fff;
     background-color: #555;
+    text-decoration: underline;
 }
 
 #navbar #logo:hover,
