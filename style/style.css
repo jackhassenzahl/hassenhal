@@ -1,7 +1,7 @@
 @font-face {
     font-family: "intertight";
     src: url("/fonts/InterTight-VariableFont_wght.ttf") format("truetype");
-    font-weight: light;
+    font-weight: 300;
 }
 
 html, body {
@@ -31,11 +31,16 @@ footer p {
 }
 
 h1 {
+    font-weight: 100;
     margin: 0.5em auto;
     font-size: 72px;
     color: #cc7;
     width: max-content;
     max-width: 100vw;
+}
+
+h2 {
+    font-weight: 200;
 }
 
 p {
