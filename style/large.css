@@ -3,37 +3,25 @@
         font-size: 24px;
     }
     
-    .sub-content {
-        transform: translateX(3px) translateY(-10px);
-    }
-    .dropdown-content {
-        transform: translateY(-10px);
-    }
-
-    .dropdown-content .dropdown:focus .sub-content,
-    .dropdown-content .dropdown:hover .sub-content {
-        transform: translateX(3px) translateY(0);
-    }
-
-    .dropdown:focus .dropdown-content,
-    .dropdown:hover .dropdown-content {
-        transform: translateY(0);
-    }
-
-    .sub-content {
-        right: 100%;
-    }
-
-    #navbar #navbutton a {
-        transition: 0.5s;
-    }
-
-    #navbar #logo {
-        transition: 0.5s;
-    }
-
     #navbar #logo:hover,
     #navbar #logo:focus {
         text-decoration: none;
     }
+    
+    #navbar #navbutton a {
+        transition: 0.5s;
+    }
+    
+    .sub-content,
+    .dropdown-content {
+        transition: 0.5s;
+    }
+
+    #menu li a {
+        transition: 0.5s;
+    }  
+    #navbar #logo {
+        transition: 0.5s;
+    }
+  
 }

@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "intertight";
+    src: url("/fonts/InterTight-VariableFont_wght.ttf") format("truetype");
+    font-weight: light;
+}
+
 html, body {
     overflow-x: hidden;
 }
@@ -7,7 +13,7 @@ body {
     flex-direction: column;
     line-height: 1;
     background: #222;
-    font-family: sans-serif;
+    font-family: "intertight";
     color: #ccc;
     margin: 0;
     text-align: center;
@@ -27,7 +33,6 @@ footer p {
 h1 {
     margin: 0.5em auto;
     font-size: 72px;
-    font-weight: bold;
     color: #cc7;
     width: max-content;
     max-width: 100vw;
@@ -54,12 +59,10 @@ li {
     margin: 0.5em 0;
     padding: 0.5em 1em;
     font-size: 36px;
-    font-weight: bold;
     border-radius: 36px;
     background: #333;
     text-decoration: none;
     color: #ccc;
-    transition: 0.3s;
 }    
 
 #menu li a.button:hover,
@@ -86,7 +89,7 @@ li {
 
 #navbar #navbutton a {
     color: #ccc;
-    padding: 15px 1em;
+    padding: 12px 1em;
     text-decoration: none;
     border-radius: 27px;
 }
@@ -108,7 +111,6 @@ li {
     color: #cc7;
     text-decoration: none;
     font-size: 36px;
-    font-weight: bold;
     margin-right: auto;
     padding: 9px 0.5em;
     border-radius: 36px;
@@ -129,19 +131,17 @@ li {
     border-radius: 27px;
     position: absolute;
     right: 0;
-    transform: translateX(100%);
     opacity: 0;
     pointer-events: none;
     white-space: nowrap;
     display: flex;
     flex-direction: column;
-    transition: 0.5s;
 }
 
 .sub-content {
     margin-top: 0;
     top:0;
-    transform: translateX(3px) translateY(-10px);
+    transform: translateX(3px);
     right: 100%;
 }
 
@@ -164,7 +164,6 @@ li {
 .dropdown:focus-within .dropdown-content,
 .dropdown:hover .dropdown-content {
     opacity: 1;
-    transform: translateX(0);
     pointer-events: auto;
 }
 
@@ -172,7 +171,7 @@ li {
 .dropdown-content .dropdown:hover .sub-content {
     opacity: 1;
     right: 100%;
-    transform: translateX(3px) translateY(0);
+    transform: translateX(3px);
     pointer-events: auto;
 }
 
