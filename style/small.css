@@ -1,14 +1,15 @@
 @media (max-width: 700px) {
     h1 {
         font-size: 48px;
+        margin-top: 107px;
     }
 
     #navbar {
-    display: flex;
-    background-color: #333;
-    padding: 1em;
-    align-items: center;
-}
+        display: flex;
+        background-color: #333;
+        padding: 1em;
+        align-items: center;
+    }
 
     #navbutton {
         padding: 15px 0;

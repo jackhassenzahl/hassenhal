@@ -32,7 +32,7 @@ footer p {
 
 h1 {
     font-weight: 100;
-    margin: 0.5em auto;
+    margin: 125px auto 0.5em;
     font-size: 72px;
     color: #cc7;
     width: max-content;
@@ -57,10 +57,13 @@ li {
     width: max-content;
     margin: 0 auto;
     list-style: none;
-}    
+}
+
+img {
+    border: 3px solid #555;
+}
 
 #menu li a {
-    box-shadow: inset 0 0 0 3px #555;
     display: block;
     margin: 0.5em 0;
     padding: 0.5em 1em;
@@ -69,6 +72,7 @@ li {
     background: #333;
     text-decoration: none;
     color: #ccc;
+    box-shadow: inset 0 0 0 3px #555;
 }    
 
 #menu li a.button:hover,
@@ -79,10 +83,15 @@ li {
 }    
 
 #navbar {
+    border-bottom: 3px solid #555;
+    position: fixed;
+    right: 0;
+    left: 0;
     display: flex;
     background-color: #333;
     padding: 1em;
     align-items: center;
+    z-index: 999;
 }
 
 #navbutton {
