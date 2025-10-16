@@ -11,17 +11,13 @@
         align-items: center;
     }
 
-    #navbutton {
-        padding: 15px 0;
-        border-radius: 27px;
+    .dropdown-content a,
+    .menu {
+        padding: 15px 1em;
+        border-radius: 24px;
         font-size: 18px;
     }
-
-    #navbar #navbutton a {
-        padding: 13px 1em;
-        border-radius: 27px;
-    }
-
+    
     #navbar #logo {
         font-size: 24px;
         padding: 12px 0.5em;
@@ -29,8 +25,8 @@
     }
 
     .dropdown-content {
-        margin-top: 13px;
-        border-radius: 27px;
+        margin-top: -3px;
+        border-radius: 24px;
     }
 
     .dropdown-content a {
