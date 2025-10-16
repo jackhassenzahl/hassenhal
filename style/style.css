@@ -22,6 +22,7 @@ body {
 
 main {
     flex: 1;
+    margin-top: 86px;
 }
 
 footer p {
@@ -36,7 +37,7 @@ footer p {
 
 h1 {
     font-weight: 100;
-    margin: 125px auto 0.5em;
+    margin: 0.5em auto 0.5em;
     font-size: 72px;
     color: #cc7;
     width: max-content;
@@ -64,7 +65,7 @@ li {
 }
 
 img {
-    border: 3px solid #555;
+    box-shadow: inset 0 0 0 3px #555;
 }
 
 #menu li a {
@@ -120,22 +121,23 @@ img {
     text-decoration: underline;
 }
 
+#navbar #logo {
+    margin-right: auto;
+    border-radius: 25%;
+    height: 54px;
+}
+
+#navbar #logo img{
+    height: 54px;
+    border-radius: 25%;
+}
+
 #navbar #logo:hover,
 #navbar #logo:focus {
     background-color: #555;
     color: #fff;
     text-decoration: underline;
-}
-
-#navbar #logo {
-    color: #cc7;
-    text-decoration: none;
-    font-size: 36px;
-    margin-right: auto;
-    padding: 9px 0.5em;
-    border-radius: 27px;
-    box-shadow: inset 0 0 0 3px #555;
-}
+}    
 
 .dropdown {
     position: relative;
