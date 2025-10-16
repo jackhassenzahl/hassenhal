@@ -30,6 +30,10 @@ footer p {
     font-size: 12px;
 }
 
+#sub-text {
+    font-size: 18px;
+}
+
 h1 {
     font-weight: 100;
     margin: 125px auto 0.5em;
