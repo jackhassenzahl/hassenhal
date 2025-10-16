@@ -13,12 +13,12 @@
         text-decoration: none;
     }
 
-    #navbar #navbutton a:hover,
-    #navbar #navbutton a:focus {
+    #navbar #navbutton .dropdown a:hover,
+    #navbar #navbutton .dropdown a:focus {
         text-decoration: none;
     }
 
-    #navbar #navbutton a {
+    #navbar #navbutton .dropdown a {
         transition: 0.5s;
     }
     
