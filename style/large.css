@@ -3,11 +3,6 @@
         font-size: 24px;
     }
     
-    #navbar #logo:hover,
-    #navbar #logo:focus {
-        text-decoration: none;
-    }
-
     #menu li a.button:hover,
     #menu li a.button:focus {
         text-decoration: none;
