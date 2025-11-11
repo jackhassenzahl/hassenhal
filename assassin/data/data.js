@@ -33,7 +33,12 @@ export function renderTable(containerId, options = { showKills: true }) {
 
     // Sort depending on whether kills matter
     assassins.sort((a, b) => {
-        if (a.status !== b.status) return a.status === "out" ? 1 : -1;
+        const norm = s => (s === "rev" ? "in" : s);
+
+        const aStatus = norm(a.status);
+        const bStatus = norm(b.status);
+
+        if (aStatus !== bStatus) return aStatus === "out" ? 1 : -1;
         if (showKills && b.kills !== a.kills) return b.kills - a.kills;
         return a.name.localeCompare(b.name);
     });
