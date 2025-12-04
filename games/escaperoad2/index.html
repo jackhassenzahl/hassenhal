@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="content-language" content="en">
+	<title>Escape Road 2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="/images/logo.svg" type="image/svg">
+	<link rel="stylesheet" type="text/css" href="/style/style.css">
+	<link rel="stylesheet" type="text/css" media="(max-width: 700px)" href="/style/small.css">
+	<link rel="stylesheet" type="text/css" media="(min-width: 701px) and (max-width: 900px)" href="/style/medium.css">
+	<link rel="stylesheet" type="text/css" media="(min-width: 901px)" href="/style/large.css">
+
+	<style>
+		main {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			min-height: 80vh;
+		}
+
+		.game-frame {
+			flex: 1;
+			width: 80%;
+            aspect-ratio: 16 / 8;
+            box-sizing: border-box;
+			padding: 3px;
+			box-shadow: inset 0 0 0 3px #555;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#gameContainer {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			overflow: hidden;
+			box-sizing: border-box;
+		}
+
+		#gameContainer iframe {
+			background: #222;
+			width: 100%;
+			height: 100%;
+			border: 0;
+			display: block;
+			box-sizing: content-box;
+			position: relative;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="navigation"></div>
+	<main>
+		<header>
+			<h1>Escape Road 2</h1>
+		</header>
+
+		<div class="game-frame">
+			<div id="gameContainer">
+				<iframe
+					src="https://game.azgame.io/escape-road-2/"
+					scrolling="no">
+				</iframe>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<p>© 2025 Jack Hassenzahl</p>
+	</footer>
+
+	<script src="/scripts/navbar.js"></script>
+</body>
+
+</html>
