@@ -1,0 +1,3 @@
+*.stl
+.venv
+qr_code.scad
