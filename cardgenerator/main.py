@@ -4,7 +4,7 @@ import subprocess
 from pathlib import Path
 
 # ---------------- SETTINGS ----------------
-TEXT = input("Date to encode: ")
+TEXT = input("Data to encode: ")
 CARD_FILE = "template.scad"      # existing SCAD file
 OUTPUT_FILE = "qr_code.scad"
 MODULE = 1.0
