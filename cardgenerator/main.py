@@ -5,7 +5,7 @@ from pathlib import Path
 
 # ---------------- SETTINGS ----------------
 TEXT = "1234567890123456"
-CARD_FILE = "card.scad"      # existing SCAD file
+CARD_FILE = "template.scad"      # existing SCAD file
 OUTPUT_FILE = "qr_code.scad"
 MODULE = 1.0
 HEIGHT = 2.0
