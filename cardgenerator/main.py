@@ -1,3 +1,7 @@
+import os
+
+os.system('cardvenv')
+
 import sys
 import qrcode
 import numpy as np
