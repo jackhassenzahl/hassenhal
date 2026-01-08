@@ -1,0 +1,27 @@
+<form id="form">
+  <input type="text" name="qrtext" required>
+  <button>Generate STL</button>
+</form>
+
+<script>
+form.onsubmit = async e => {
+  e.preventDefault();
+
+  let fd = new FormData(form);
+  let res = await fetch("start.php", {method:"POST", body:fd});
+  let data = await res.json();
+  let job = data.job;
+
+  let timer = setInterval(async () => {
+    let s = await fetch("status.php?job=" + job);
+    let status = await s.json();
+    if (status.status === "done") {
+      clearInterval(timer);
+      window.location.href = "download.php?job=" + job;
+    } else if (status.status === "error") {
+      clearInterval(timer);
+      alert("Job failed");
+    }
+  }, 2000);
+};
+</script>
