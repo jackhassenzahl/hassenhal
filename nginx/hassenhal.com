@@ -13,4 +13,9 @@ server {
             include snippets/fastcgi-php.conf;
             fastcgi_pass unix:/var/run/php/php8.4-fpm.sock;
     }
+
+    location /app/ {
+        include proxy_params;
+        proxy_pass http://unix:/run/hassenhal.sock;
+    }
 }
