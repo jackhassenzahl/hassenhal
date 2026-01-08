@@ -3,3 +3,4 @@
 qr_code.scad
 __pycache__
 output/
+jobs/*/*.txt
