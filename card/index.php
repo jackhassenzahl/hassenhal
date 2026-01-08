@@ -9,6 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // Run Python synchronously (PHP WILL WAIT)
     $cmd = "/var/www/html/hassenhal/card/.venv/bin/python /var/www/html/hassenhal/card/main.py " . escapeshellarg($text) . " 2>&1";
+    echo shell_exec($cmd);
     $output = shell_exec($cmd);
 
     // Ensure file exists before sending
