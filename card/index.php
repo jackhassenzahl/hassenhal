@@ -39,7 +39,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <style>
         p {
             width: 80%;
-            alignment: center;
+            max-width: 800px;
+            text-align: left;
+            margin: auto;
+            line-height: normal;
         }
 
     </style>
