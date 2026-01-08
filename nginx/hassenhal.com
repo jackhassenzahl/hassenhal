@@ -1,9 +1,9 @@
 server {
     listen 80;
-    server_name hassenhal.com www.hassenhal.com;
+    server_name example.hassenhal.com;
 
     root /var/www/html/hassenhal;
-	index index.html;
+	index index.html index.php;
 
 	location / {
 		try_files $uri $uri/ =404;

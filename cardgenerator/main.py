@@ -1,10 +1,11 @@
+import sys
 import qrcode
 import numpy as np
 import subprocess
 from pathlib import Path
 
 # ---------------- SETTINGS ----------------
-TEXT = input("Data to encode: ")
+TEXT = sys.argv[1]
 CARD_FILE = "template.scad"      # existing SCAD file
 OUTPUT_FILE = "qr_code.scad"
 MODULE = 1.0
@@ -78,6 +79,7 @@ def stlfile():
         print(result.stderr)
     else:
         print("STL exported:", stl_file)
+    return
 
 def main():
     scadfile()
