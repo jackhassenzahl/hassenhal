@@ -1,6 +1,4 @@
-import os
-
-os.system('cardvenv')
+#!/var/www/html/hassenhal/card/.venv/bin/python
 
 import sys
 import qrcode
