@@ -8,12 +8,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if (file_exists("qr_card.stl")) unlink("qr_card.stl");
 
     // Run Python synchronously (PHP WILL WAIT)
-    $cmd = "python3 main.py " . escapeshellarg($text);
-    passthru($cmd, $ret);
+    $cmd = "/var/www/html/hassenhal/card/.venv/bin/python /var/www/html/hassenhal/card/main.py " . escapeshellarg($text) . " 2>&1";
+    $output = shell_exec($cmd);
 
     // Ensure file exists before sending
-    if ($ret !== 0 || !file_exists("qr_card.stl")) {
-        exit("Generation failed.");
+    if (!file_exists("qr_card.stl")) {
+        exit("Generation failed:<pre>$output</pre>");
     }
 
     header("Content-Type: application/sla");
