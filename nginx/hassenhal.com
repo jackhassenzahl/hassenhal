@@ -11,7 +11,8 @@ server {
     }
 
 	location / {
-		try_files $uri $uri/ =404;
-		add_header Cache-Control "no-store, must-revalidate";
-	}
+        try_files $uri $uri/ /index.php?$query_string;
+        add_header Cache-Control "no-store, must-revalidate";
+    }
+
 }
