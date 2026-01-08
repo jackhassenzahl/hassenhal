@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <header>
             <h1>QR Card Generator</h1>
         </header>
-        <p>
+        <p width=80%>
             Input whatever data you want, wait a moment and a .STL file will be created for you. It will be the size of a credit card with a QR code embedded on it.
         </p>
         <form method="POST">
