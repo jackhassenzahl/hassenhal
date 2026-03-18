@@ -1,9 +1,9 @@
 export const assassins = [
     { name: "Anna",         kills: 0,   status: "in" },
-    { name: "Anna Laura",   kills: 1,   status: "in" },
+    { name: "Anna Laura",   kills: 0,   status: "in" },
     { name: "Brielle",      kills: 0,   status: "in" },
     { name: "Ellie",        kills: 0,   status: "in" },
-    { name: "Evelyn",       kills: 1,   status: "in" },
+    { name: "Evelyn",       kills: 0,   status: "in" },
     { name: "Garrett",      kills: 0,   status: "in" },
     { name: "Jack. H",      kills: 0,   status: "rev" },
     { name: "Jack. R",      kills: 0,   status: "in" },
@@ -11,11 +11,11 @@ export const assassins = [
     { name: "Jacob",        kills: 0,   status: "rev" },
     { name: "James",        kills: 0,   status: "out" },
     { name: "Kai",          kills: 0,   status: "out" },
-    { name: "Lola",         kills: 1,   status: "in" },
-    { name: "Maeve",        kills: 2,   status: "rev" },
+    { name: "Lola",         kills: 0,   status: "in" },
+    { name: "Maeve",        kills: 0,   status: "rev" },
     { name: "Phoenix",      kills: 0,   status: "in" },
     { name: "Presley",      kills: 0,   status: "in" },
-    { name: "Sarah",        kills: 1,   status: "in" },
+    { name: "Sarah",        kills: 0,   status: "in" },
 ];
 
 /**
