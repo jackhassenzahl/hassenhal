@@ -9,15 +9,14 @@ server {
 		try_files $uri $uri/ =404;
 	}
 
-    ssi on;
-
     location ~ \.php$ {
-            include snippets/fastcgi-php.conf;
-            fastcgi_pass unix:/var/run/php/php8.4-fpm.sock;
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php8.4-fpm.sock;
     }
 
     location /app/ {
         include proxy_params;
         proxy_pass http://unix:/run/hassenhal.sock;
+        ssi on;
     }
 }
